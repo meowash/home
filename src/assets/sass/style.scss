@@ -1,0 +1,57 @@
+/* Default styles */
+@import "vars";
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0px;
+
+    background-color: $white;
+
+    font-family: 'Montserrat', sans-serif;
+    color: $black;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    &.no-scroll {
+        overflow:hidden;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+// bootstrap
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+
+
+// blocks
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/homepage";
+@import "blocks/intro_inner";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/person";
+@import "blocks/services";
+@import "blocks/works";
+@import "blocks/talk";
+@import "blocks/blog";
+@import "blocks/social";
+@import "blocks/badge";
+@import "blocks/slider";
+@import "blocks/burger";
+@import "blocks/input";
+@import "blocks/footer";
+@import "blocks/helpers";
+@import "blocks/modal";
+@import "blocks/preloader";
+@import "blocks/button_up";
+@import "blocks/end";

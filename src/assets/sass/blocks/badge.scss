@@ -1,0 +1,40 @@
+.badge {
+    background-color: $light-gray;
+}
+.slider__dots{
+    padding-bottom: 100px;
+    justify-content: center;
+}
+.dot{
+    cursor: pointer;
+    margin-right: 5px;
+    border: 8px solid $gray;
+    width: 0.8em; 
+    height: .8em;
+    border-radius: 70%;
+
+}
+.dot-active{
+    border: 8px solid $red;
+}
+.badge__inner {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.badge__intro {
+    color: $dark-gray;
+    text-align: center;
+}
+.badge__text {
+    font-style: italic;
+    font-size: 1.2rem;
+    padding: 40px 0;
+}
+.badge__subtitle{
+    font-size: 1.4rem;
+    padding-bottom: 45px;
+}
+.badge__img{
+    margin: 0 auto;
+}

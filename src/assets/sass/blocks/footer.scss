@@ -1,0 +1,23 @@
+.footer {
+    background-color: $red;
+}
+.footer__inner{
+    text-align: center;
+}
+.footer__line {
+    display: inline-block;
+    border: none;
+    width: 50px;
+    height: 2px;
+    color: $white;
+    background-color: $white;
+}
+.footer__title {
+    font-family: 'Roboto', sans-serif;
+    color: $white;
+    padding: 40px 0 15%;
+}
+.row__social{
+    display: flex;
+    justify-content: center;
+}

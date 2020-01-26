@@ -1,0 +1,27 @@
+.intro__inner {
+    text-align: center;
+    padding-top: 100px;
+    @media (max-width: 940px) {
+        padding-top: 50px;
+    }
+}
+.intro__title{
+    color: $dark-gray;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-bottom: 30px;
+}
+.intro__line{
+    display: inline-block;
+    border: none;
+    width: 50px;
+    height: 2px;
+    color: $dark-gray;
+    background-color: $dark-gray;
+}
+.intro__subtitle{
+    padding-top: 35px;
+    color: $dark-gray;
+    font-size: 1rem;
+    padding-bottom: 75px;
+}

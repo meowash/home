@@ -1,0 +1,23 @@
+.about {
+    background-color: $light-gray;
+}
+.about__text {
+    color: $dark-gray;
+}
+.about__persons{
+    padding-top: 70px;
+}
+.person__text {
+    text-align: center;
+    padding: 20px 0;
+    color: $dark-gray;
+
+    transition: opacity .3s linear;
+}
+.person__title {
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+.persons__subtitle{
+    padding-bottom: 70px;
+}

@@ -1,0 +1,45 @@
+ .preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    z-index: 2;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+    .loader { 
+    width: 50px;
+    height: 50px;
+    border: 25px solid rgba(133, 130, 130, 0.897);
+    border-radius: 50%;
+    position: absolute;
+    animation: spin 1s infinite linear;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }
+    &.done {
+    opacity: 0;
+    visibility: hidden;
+    }
+    }
+    @keyframes spin {
+    0% {
+        border: 25px solid rgba(167, 165, 165, 0.815);
+    }
+    25%{
+        border: 25px solid rgba(167, 166, 166, 0.87);
+    }
+    50%{
+        border: 25px solid rgba(179, 177, 177, 0.87);
+    }
+    75%{
+        border: 25px solid rgba(209, 209, 209, 0.87);
+    }
+    100% {
+        border: 25px solid rgba(226, 225, 225, 0.897);
+    }
+    } 
+    

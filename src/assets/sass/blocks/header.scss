@@ -1,0 +1,15 @@
+.header {
+    padding-top: 45px;
+    position: relative;
+}
+.header__logo{
+    color: $white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    @media (max-width: 950px) {
+        font-size: 1.4rem;
+    }
+    @media (max-width: 750px) {
+        font-size: .8rem;
+    }
+}

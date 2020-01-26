@@ -1,0 +1,37 @@
+.blog__post{
+    padding: 40px 0;
+}
+
+.blog__title{
+    color: $dark-gray;
+    font-weight: 1.1rem;
+    padding-bottom: 20px;
+}
+.blog__subtitle{
+    font-weight: 0.8rem;
+    color: $dark-gray;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+.blog__color {
+    color: $red;
+}
+.blog__text{
+    line-height: 1.5;
+    color: $dark-gray;
+    padding-bottom: 40px;
+}
+
+.blog__line{
+    color: $gray;
+    display: inline-block;
+    border: none;
+    width: 1220px;
+    height: 2px;
+    color: #dddddd;
+    background-color: #dddddd;
+    max-width: 100%;
+} 
+.blog__img{
+    width: 100%;
+}

@@ -1,0 +1,51 @@
+.btn{
+    color: $white;
+    text-decoration: none;
+    border: 2px solid $white;
+    padding: 2% 5%;
+ 
+    transition: .3s linear;
+
+    &.btn--form{
+        color: $dark-gray;
+        border: 2px solid $gray;
+        background-color: $white;
+        margin-top: 5%;
+        display: flex;
+        justify-content: right;
+        margin-bottom: 7%;
+
+    }
+    &:hover {
+        background-color: $white;
+        color: $black;
+        font-weight: 700;
+    }
+    @media (max-width: 900px) {
+        font-size: 1rem;
+        &--talk {
+            font-size: 1rem;
+        }
+    }
+    @media (max-width: 800px) {
+        &--talk {
+            font-size: .8rem;
+        }
+    }
+    @media (max-width: 600px) {
+        &--talk {
+            font-size: .5rem;
+        }
+    }
+}
+
+.blog__btn{
+    color: $dark-gray;
+    text-decoration: none;
+    font-weight: 700;
+
+    transition: .2s linear;
+    &:hover {
+        color: $red;
+    }
+}

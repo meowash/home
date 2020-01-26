@@ -1,0 +1,57 @@
+// main: ../style.less
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+
+    @media @mobile {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+
+        background-color: #fff;
+        text-align: center;
+
+        display: none;
+
+        &.show {
+            display: flex;
+        }
+    }
+
+}
+.nav__link {
+    margin-left: 30px;
+    position: relative;
+    font-size: 14px;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+   
+
+  &:hover {
+      text-decoration: underline;
+  }
+  &--btn {
+      border-radius: 20px;
+      border: 1px solid @black;
+      padding: .6rem 1.4rem ;
+        &:hover{
+            text-decoration: none;
+            background-color: @black;
+            color: @white;
+        }
+  }
+   @media @mobile {
+    width: 100%;
+    margin-left: 0;
+    padding: .5rem 1rem;
+   }
+}

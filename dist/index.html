@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- Meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index,follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title></head>
+<body>
+ <svg style="display: none;">
+     <symbol id="facebook" viewBox="0 0 96.124 96.123">
+        <g>
+                <path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+                c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+                c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+                c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+        </g>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 97.637 97.637">
+        <g>
+                        <path d="M97.523,18.526c-0.14-0.165-0.371-0.221-0.568-0.131c-2.919,1.295-5.99,2.226-9.153,2.776
+                        c3.358-2.526,5.86-6.024,7.143-10.035c0.062-0.192-0.002-0.402-0.159-0.527c-0.158-0.125-0.377-0.141-0.55-0.038
+                        c-3.782,2.243-7.878,3.824-12.18,4.701c-3.812-3.956-9.135-6.219-14.644-6.219c-11.204,0-20.318,9.114-20.318,20.317
+                        c0,1.355,0.131,2.697,0.391,4c-15.518-0.958-30.028-8.408-39.894-20.509c-0.101-0.124-0.254-0.193-0.414-0.177
+                        c-0.159,0.012-0.301,0.102-0.381,0.239c-1.8,3.088-2.751,6.621-2.751,10.215c0,6.229,2.83,12.053,7.649,15.896
+                        c-2.481-0.298-4.904-1.079-7.089-2.292c-0.147-0.083-0.33-0.082-0.477,0.003c-0.147,0.084-0.24,0.24-0.244,0.41l-0.002,0.26
+                        c0,8.946,5.895,16.801,14.282,19.409c-2.209,0.356-4.501,0.332-6.754-0.098c-0.166-0.031-0.34,0.026-0.454,0.154
+                        c-0.113,0.128-0.151,0.307-0.099,0.469c2.515,7.85,9.503,13.355,17.637,14.041c-6.785,4.971-14.805,7.59-23.279,7.59
+                        c-1.561,0-3.133-0.093-4.673-0.274c-0.22-0.025-0.438,0.106-0.514,0.317c-0.076,0.213,0.005,0.451,0.195,0.572
+                        c9.17,5.881,19.773,8.988,30.664,8.988c35.625,0,56.913-28.938,56.913-56.914c0-0.779-0.015-1.554-0.046-2.327
+                        c3.843-2.811,7.142-6.252,9.802-10.235C97.675,18.929,97.662,18.692,97.523,18.526z"/>
+        </g>
+        </symbol>
+        <symbol id="google" viewBox="0 0 96.828 96.827">
+                <g>
+                                <path d="M62.617,0H39.525c-10.29,0-17.413,2.256-23.824,7.552c-5.042,4.35-8.051,10.672-8.051,16.912
+                                c0,9.614,7.33,19.831,20.913,19.831c1.306,0,2.752-0.134,4.028-0.253l-0.188,0.457c-0.546,1.308-1.063,2.542-1.063,4.468
+                                c0,3.75,1.809,6.063,3.558,8.298l0.22,0.283l-0.391,0.027c-5.609,0.384-16.049,1.1-23.675,5.787
+                                c-9.007,5.355-9.707,13.145-9.707,15.404c0,8.988,8.376,18.06,27.09,18.06c21.76,0,33.146-12.005,33.146-23.863
+                                c0.002-8.771-5.141-13.101-10.6-17.698l-4.605-3.582c-1.423-1.179-3.195-2.646-3.195-5.364c0-2.672,1.772-4.436,3.336-5.992
+                                l0.163-0.165c4.973-3.917,10.609-8.358,10.609-17.964c0-9.658-6.035-14.649-8.937-17.048h7.663c0.094,0,0.188-0.026,0.266-0.077
+                                l6.601-4.15c0.188-0.119,0.276-0.348,0.214-0.562C63.037,0.147,62.839,0,62.617,0z M34.614,91.535
+                                c-13.264,0-22.176-6.195-22.176-15.416c0-6.021,3.645-10.396,10.824-12.997c5.749-1.935,13.17-2.031,13.244-2.031
+                                c1.257,0,1.889,0,2.893,0.126c9.281,6.605,13.743,10.073,13.743,16.678C53.141,86.309,46.041,91.535,34.614,91.535z
+                                 M34.489,40.756c-11.132,0-15.752-14.633-15.752-22.468c0-3.984,0.906-7.042,2.77-9.351c2.023-2.531,5.487-4.166,8.825-4.166
+                                c10.221,0,15.873,13.738,15.873,23.233c0,1.498,0,6.055-3.148,9.22C40.94,39.337,37.497,40.756,34.489,40.756z"/>
+                        <path d="M94.982,45.223H82.814V33.098c0-0.276-0.225-0.5-0.5-0.5H77.08c-0.276,0-0.5,0.224-0.5,0.5v12.125H64.473
+                                c-0.276,0-0.5,0.224-0.5,0.5v5.304c0,0.275,0.224,0.5,0.5,0.5H76.58V63.73c0,0.275,0.224,0.5,0.5,0.5h5.234
+                                c0.275,0,0.5-0.225,0.5-0.5V51.525h12.168c0.276,0,0.5-0.223,0.5-0.5v-5.302C95.482,45.446,95.259,45.223,94.982,45.223z"/>
+                </g>
+        </symbol>
+        <symbol id="linkedin" viewBox="0 0 438.536 438.535">
+                <g>
+                <rect x="5.424" y="145.895" width="94.216" height="282.932"/>
+                <path d="M408.842,171.739c-19.791-21.604-45.967-32.408-78.512-32.408c-11.991,0-22.891,1.475-32.695,4.427
+		c-9.801,2.95-18.079,7.089-24.838,12.419c-6.755,5.33-12.135,10.278-16.129,14.844c-3.798,4.337-7.512,9.389-11.136,15.104
+		v-40.232h-93.935l0.288,13.706c0.193,9.139,0.288,37.307,0.288,84.508c0,47.205-0.19,108.777-0.572,184.722h93.931V270.942
+		c0-9.705,1.041-17.412,3.139-23.127c4-9.712,10.037-17.843,18.131-24.407c8.093-6.572,18.13-9.855,30.125-9.855
+		c16.364,0,28.407,5.662,36.117,16.987c7.707,11.324,11.561,26.98,11.561,46.966V428.82h93.931V266.664
+		C438.529,224.976,428.639,193.336,408.842,171.739z"/>
+		<path d="M53.103,9.708c-15.796,0-28.595,4.619-38.4,13.848C4.899,32.787,0,44.441,0,58.529c0,13.891,4.758,25.505,14.275,34.829
+	        c9.514,9.325,22.078,13.99,37.685,13.99h0.571c15.99,0,28.887-4.661,38.688-13.99c9.801-9.324,14.606-20.934,14.417-34.829
+	        c-0.19-14.087-5.047-25.742-14.561-34.973C81.562,14.323,68.9,9.708,53.103,9.708z"/>
+                </g>
+        </symbol>
+        <symbol id="arrow"  viewBox="0 0 372.136 372.136">
+                <g>
+                        <path d="M371.682,143.271c-14.688-44.676-26.316-90.576-50.797-131.58c-2.447-4.284-10.403-5.508-12.239,0
+                                c-17.748,42.228-36.108,83.844-47.736,127.908c-1.836,7.344,7.344,12.852,12.852,7.344c10.404-10.404,21.421-20.196,33.049-28.764
+                                c-1.225,90.576,1.836,195.84-105.876,223.992c-47.736,12.24-100.98,5.509-140.76-25.092C18.557,284.644,9.377,231.4,12.437,181.828
+                                c0-4.896-7.344-6.12-8.568-1.224c-23.868,110.772,66.096,197.064,176.256,181.764c54.468-7.344,100.368-33.048,123.624-85.068
+                                c20.809-46.512,19.584-102.204,18.36-153c11.628,10.404,24.479,19.584,37.943,26.928
+                                C366.173,154.9,374.129,150.004,371.682,143.271z M316.602,102.88c-3.672-1.224-6.12,0.612-7.345,3.672c0,0,0,0-0.611,0.612
+                                c-9.792,3.06-18.36,7.956-26.316,13.464c9.18-29.988,21.42-59.364,33.048-88.128c15.912,29.988,25.092,62.424,35.496,94.248
+                                C339.857,117.568,329.453,108.388,316.602,102.88z"/>
+                </g>
+        </symbol>
+        <symbol id="arrow-left"  viewBox="0 0 485 485">
+                <g>
+                        <path d="M413.974,71.026C368.171,25.225,307.274,0,242.5,0S116.829,25.225,71.026,71.026C25.225,116.829,0,177.726,0,242.5
+                                s25.225,125.671,71.026,171.474C116.829,459.775,177.726,485,242.5,485s125.671-25.225,171.474-71.026
+                                C459.775,368.171,485,307.274,485,242.5S459.775,116.829,413.974,71.026z M242.5,455C125.327,455,30,359.673,30,242.5
+                                S125.327,30,242.5,30S455,125.327,455,242.5S359.673,455,242.5,455z"/>
+                        <polygon points="270.524,114.411 142.852,242.5 270.524,370.589 291.772,349.411 185.209,242.5 291.772,135.589 	"/>
+                </g>
+        </symbol>
+        <symbol id="arrow-right" viewBox="0 0 485 485">
+                <g>
+                        <path d="M413.974,71.026C368.171,25.225,307.274,0,242.5,0S116.829,25.225,71.026,71.026C25.225,116.829,0,177.726,0,242.5
+                                s25.225,125.671,71.026,171.474C116.829,459.775,177.726,485,242.5,485s125.671-25.225,171.474-71.026
+                                C459.775,368.171,485,307.274,485,242.5S459.775,116.829,413.974,71.026z M242.5,455C125.327,455,30,359.673,30,242.5
+                                S125.327,30,242.5,30S455,125.327,455,242.5S359.673,455,242.5,455z"/>
+                        <polygon points="193.228,135.589 299.791,242.5 193.228,349.411 214.476,370.589 342.148,242.5 214.476,114.411 	"/>
+                </g>
+        </symbol>
+	</svg>
+
+      <!-- header -->
+    
+    
+    <div class="homepage" id="home">
+        <div class="container">
+    
+               <div class="header">
+                <div class="row">
+                        <div class="col-lg-4">
+                            <div class="header__logo">Startup</div>
+                        </div>
+                        <div class="col-lg-8">
+                            <nav class="nav" id="nav">
+                                <a href="#home" class="nav__link">Home</a>
+                                <a href="#services" class="nav__link">Services</a>
+                                <a href="#about" class="nav__link">About</a>
+                                <a href="#works" class="nav__link">Works</a>
+                                <a href="#blog" class="nav__link">Blog</a>
+                                <a href="#clients" class="nav__link">Clients</a>
+                                <a href="#form" class="nav__link">Contact</a>
+                            </nav>
+                            <button class="burger" type="button" id="navToggle">
+                                    <img src="/assets/img/burger.png" alt="" class="burger__icon">
+                            </button>
+                        </div>
+                    </div> <!-- ./row -->
+                </div> <!-- ./header -->
+    
+            <div class="homepage__intro" id="homepage">
+                <h1 class="homepage__title">WELCOME TO STARTUP</h1>
+                <h3 class="homepage__subtitle">Your Favorite Creative Agency Template</h3>
+                <a href="#form" class="btn" id="btn">GET STARTED</a>
+            </div>
+    
+        </div>  <!-- ./container -->
+    </div> <!-- ./homepage -->
+    
+    <div class="intro" id="services"> 
+       <div class="container">
+    
+                <div class="intro__inner">
+                    <div class="intro__title">Services</div>
+                    <div class="intro__line"></div>
+                    <div class="intro__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+    
+                    <div class="services">
+                        <div class="row">
+                        <div class="col-lg-4">
+                            <div class="services__all">
+                              <img src="assets/img/icon01.png" alt="" class="services__img">
+                              <div class="services__title">CLEAN TYPOGRAPHY</div>
+                              <div class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dicta! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, velit?</div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="services__all">
+                               <img src="assets/img/icon2.png" alt="" class="services__img">
+                               <div class="services__title">CLEAN TYPOGRAPHY</div>
+                               <div class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dicta! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, velit?</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="services__all">
+                               <img src="assets/img/icon3.png" alt="" class="services__img">
+                               <div class="services__title">CLEAN TYPOGRAPHY</div>
+                               <div class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dicta! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, velit?</div>
+                            </div>
+                        </div>
+                    </div> <!-- ./row -->
+                </div> <!-- ./services -->
+    
+        </div> <!-- ./container -->
+    </div> <!-- ./intro -->
+    
+    
+    <!-- ABOUT -->
+    
+    
+    <div class="about" id="about">
+      <div class="container">
+    
+            <div class="intro__inner">
+               <div class="intro__title">ABOUT US</div>
+               <div class="intro__line"></div>
+               <div class="intro__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+            
+            <div class="row">
+               <div class="col-lg-6">
+                   <div class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut animi debitis inventore quas, qui excepturi eveniet cum officiis cupiditate doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae laboriosam quo libero qui labore cum, tempora quisquam. Culpa, excepturi?
+                   </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut animi debitis inventore quas, qui excepturi eveniet cum officiis cupiditate doloremque! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia aliquid iste hic vitae minima. Ipsa cupiditate corrupti cumque! Blanditiis, maiores?</div>
+                </div>
+            </div>
+    
+            <!-- PERSON -->
+    
+    
+           <div class="about__persons">
+            <div class="row">
+                
+               <div class="col-lg-3">
+                   <div class="person">
+                          <img src="/assets/img/person1.png" alt="" class="person__img">
+                          <div class="person__social">
+                                <div class="row">
+                                    <a href="vk.com" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#facebook"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#twitter"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#google"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </div> <!-- ./row -->
+                          </div> <!-- ./person__social -->
+    
+                  </div> <!-- ./person -->
+                    <div class="person__text">
+                       <div class="person__title">MD. KAULIL UDDIN</div>
+                       <div class="persons__subtitle">Head of ideas</div>
+                    </div>
+               </div>
+    
+    
+               <div class="col-lg-3">
+                   <div class="person">
+                           <img src="/assets/img/person2 .png" alt="" class="person__img">
+                           <div class="person__social">
+                            <div class="row">
+                                <a href="vk.com" class="social__link">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__link">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__link">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#google"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__link">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </div> <!-- ./row -->
+                           </div>
+                   </div>
+                    <div class="person__text">
+                        <div class="person__title">MD. KAULIL UDDIN</div>
+                        <div class="persons__subtitle">Head of ideas</div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="person">
+                       <img src="/assets/img/person3.jpg" alt="" class="person__img">
+                       <div class="person__social">
+                        <div class="row">
+                            <a href="vk.com" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="#google"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="social__link">
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </div> <!-- ./row -->
+                       </div>
+                   </div>
+                    <div class="person__text">
+                        <div class="person__title">MD. KAULIL UDDIN</div>
+                        <div class="persons__subtitle">Head of ideas</div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="person">
+                            <img src="/assets/img/person4.png" alt="" class="person__img">
+                            <div class="person__social">
+                                <div class="row">
+                                    <a href="vk.com" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#facebook"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#twitter"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#google"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </div> <!-- ./row -->
+                            </div> <!-- ./person__social -->
+                            
+                    </div>
+                    <div class="person__text">
+                         <div class="person__title">MD. KAULIL UDDIN</div>
+                        <div class="persons__subtitle">Head of ideas</div>
+                    </div>
+                 </div>
+           </div> <!-- ./row -->
+        </div> <!-- ./about__persons -->
+    
+        
+    
+        </div> <!-- ./intro -->
+    </div> <!-- ./container -->
+    
+    
+    <!-- WORKS -->
+    
+    <div class="container">
+        <div class="works" id="works">
+    
+                <div class="intro__inner">
+                        <div class="intro__title">LATEST WORKS</div>
+                        <div class="intro__line"></div>
+                        <div class="works__nav">
+                            <a href="" class="works__nav-link" data-filter="All">All</a>
+                            <a href="" class="works__nav-link" data-filter="Branding">Branding</a>
+                            <a href="" class="works__nav-link" data-filter="Design"> Design</a>
+                            <a href="" class="works__nav-link" data-filter="Development">Development</a>
+                            <a href="" class="works__nav-link" data-filter="Strategy">Strategy</a>
+                        </div>
+                </div>
+        
+            <div class="work">
+              <div class="row  row--work">
+                    <div class="col-lg-4" data-cat="Development">
+                    <div class="work__main">
+                        <img src="/assets/img/work1-1.jpg" alt="" class="work__link">
+                            <div class="works__inner" id="modal__test">
+                                <div class="works__tittle">
+                                    HAIR DRESSER
+                                </div>
+                                <div class="works__subtitle">
+                                    Branding
+                                </div>
+                                <div class="works__btn-bcg">
+                                <a href="#" class="works__btn">
+                                    VIEW >
+                                </a>
+                                </div>
+                            </div> <!-- .work__inner -->
+                        </div> <!-- ./work__main -->
+                    </div> <!-- ./col-lg-4 -->
+                
+                    <div class="col-lg-4" data-cat="Design">
+                        <div class="work__main" >
+                            <img src="/assets/img/work1-2.jpg" alt="" class="work__link">
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-cat="Development">
+                        <div class="work__main" >
+                            <img src="/assets/img/work1-3.jpg" alt="" class="work__link">
+                        </div>
+                    </div>
+              </div> <!-- ./row -->
+              <div class="row row--work">
+                <div class="col-lg-4" data-cat="Branding">
+                    <div class="work__main" >
+                        <img src="/assets/img/work2-12.jpg" alt="" class="work__link">
+                    </div>
+                </div>
+                <div class="col-lg-4" data-cat="Design">
+                    <div class="work__main">
+                        <img src="/assets/img/work2-22.JPG" alt="" class="work__link">
+                    </div>
+                </div>
+                <div class="col-lg-4" data-cat="Branding">
+                    <div class="work__main" >
+                       <img src="/assets/img/work2-3.jpg" alt="" class="work__link">
+                    </div>
+                </div>
+              </div>
+              <div class="row row--work">
+                <div class="col-lg-4" data-cat="Strategy">
+                    <div class="work__main" >
+                        <img src="/assets/img/work3-1.jpg" alt="" class="work__link">
+                    </div>
+                </div>
+                <div class="col-lg-4" data-cat="Strategy">
+                    <div class="work__main">
+                        <img src="/assets/img/work3-2.jpg" alt="" class="work__link">
+                    </div>
+                </div>
+                <div class="col-lg-4" data-cat="Development">
+                    <div class="work__main">
+                       <img src="/assets/img/work3-3.jpg" alt="" class="work__link">
+                    </div>
+                </div>
+              </div>
+        </div> <!-- ./work -->
+    
+        </div> <!-- ./works -->
+    </div> <!-- ./container -->
+    
+    <div class="talk">
+        <div class="container">
+    
+            <div class="talk__inner">
+               <div class="talk__title">Do you like OUR WORK so far?</div>
+               <div class="talk__subtitle">Let's talk about YOUR PROJECT!</div>
+               <a href="#form" class="btn  btn--talk"  id="btn">GET IN TOUCH</a>
+            </div>
+    
+        </div> <!-- ./container -->
+    </div> <!-- ./talk -->
+    
+    <!-- BLOG -->
+    
+    
+    <div class="blog" id="blog">
+    
+     <div class="intro__inner">
+        <div class="intro__title">RECENT BLOG POSTS</div>
+        <div class="intro__line"></div>
+        <div class="intro__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+     </div>
+    
+     <div class="container">
+                 
+                <div class="blog__post">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <img src="/assets/img/blog11.JPG" alt="" class="blog__img">
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="blog__title"> <span class="blog__color">STARTUP IDEAS NEEDS TO BE FUNDED </span> </div>
+                            <div class="blog__subtitle">By <span class="blog__color"> Khalil </span> Uddin in <span class="blog__color">Development </span> </div>
+                            <div class="blog__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quis quos numquam vero officiis quaerat fugit quibusdam exercitationem beatae sint? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti ullam labore, nostrum quos unde expedita dolorum iure debitis optio!</div>
+                            <a href="#" class="blog__btn">READ MORE</a>
+                        </div>
+                    </div> <!-- ./row -->
+                </div> <!-- ./blog__post -->
+    
+                <div class="blog__line"></div>
+    
+                <div class="blog__post">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <img src="/assets/img/work3-2.jpg" alt="" class="blog__img">
+                        </div>
+                        <div class="col-lg-7">
+                                <div class="blog__title  blog__title--gray">USER INTERFACE DESIGNING ELEMENTS </div>
+                                <div class="blog__subtitle">By Khalil Uddin in Development </div>
+                                <div class="blog__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quis quos numquam vero officiis quaerat fugit quibusdam exercitationem beatae sint? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti ullam labore, nostrum quos unde expedita dolorum iure debitis optio!</div>
+                                <a href="#" class="blog__btn">READ MORE</a>
+                        </div>
+                    </div> <!-- ./row -->
+                </div><!-- ./blog__post -->
+    
+             </div> <!-- ./blog  -->
+         </div> <!-- ./container -->
+    
+        <!--  BADGE -->
+    
+         <div class="badge" id="clients">
+            <div class="container">
+                
+                <div class="badge__inner">
+                   <div class="row">
+                       <div class="col-lg-2">
+                            <div class="bagde__img">
+                                <img src="/assets/img/badge1.png" alt="">
+                            </div>
+                       </div>
+                       <div class="col-lg-2">
+                            <img src="/assets/img/badge2.png" alt="" class="badge__img">
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="/assets/img/badge3.png" alt="" class="badge__img">
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="/assets/img/badge4.png" alt="" class="badge__img">
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="/assets/img/badge5.png" alt="" class="badge__img">
+                        </div>
+                 
+    
+                    <div class="slider">
+                        <div class="slider__line">
+                            <div class="badge__intro">
+                                <div class="badge__text">1 Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”</div>
+                                <div class="badge__subtitle">1 John Doe, Google Inc.</div>
+                            </div>
+                            <div class="badge__intro">
+                                <div class="badge__text">3 Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”</div>
+                                <div class="badge__subtitle">3 John Doe, Google Inc.</div>
+                            </div>
+                            <div class="badge__intro">
+                                <div class="badge__text">2 Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”</div>
+                                <div class="badge__subtitle">2John Doe, Google Inc.</div>
+                            </div>
+                            
+                        </div> <!-- ./slider__line -->
+    
+                  
+                        <div class="row slider__dots">
+                            <a class="dot"> </a>
+                            <a class="dot"> </a>
+                            <a class="dot"> </a>
+                        </div> <!-- ./badge__dots -->
+                    </div> <!-- ./slider -->
+    
+    
+                    </div>  <!-- ./row -->
+                </div> <!-- ./badge__inner -->
+    
+            </div>  <!-- ./container -->
+        </div> <!-- ./badge -->
+    
+        <!-- FORM & END -->
+    
+        <div class="container">
+                <div class="intro__inner" id="form">
+                        <div class="intro__title">GET IN TOUCH</div>
+                        <div class="intro__line"></div>
+                        <div class="intro__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                     </div>
+                
+            <div class="row">
+                <div class="col-lg-4">
+                   <div class="end__title">ADDRESS</div> 
+                   <div class="end__text">312,7th Ave,New Your
+                    <br> NY 101200, United States of America </br>
+                </div>
+                </div>
+                <div class="col-lg-4">
+                    <form action="/" ,ethid="post">
+                        <input class="input" type="text" id="input-name" placeholder="YOUR NAME">
+                    <form>
+                </div>
+                <div class="col-lg-4">
+                    <form action="/" ,ethid="post">
+                        <input class="input" type="" id="input-email" placeholder="YOUR E-MAIL">
+                    <form>
+                </div>
+    
+    
+                <div class="col-lg-4">
+                    <div class="end__title">
+                        
+                        HOTLINE (24*7)</div> 
+                    <div class="end__text">
+                        +65 0052 300 +6588251 210
+                        <br> +88 01723 511 340 </br>
+                    </div>
+                </div>
+                
+                 <div class="col-lg-4">
+                    <form action="/" ,ethid="post">
+                        <input class="input" type="text" id="input-subject" placeholder="YOUR SUBJECT">
+                    <form>
+                 </div>
+                 <div class="col-lg-4">
+                    <form action="/" ,ethid="post">
+                        <input class="input" type="text" id="input-company" placeholder="COMPANY NAME">
+                    <form>
+                </div>
+                 <div class="col-lg-4">
+                    <div class="end__title">E-MAIL</div> 
+                    <div class="end__text">
+                        shapedtheme@gmail.com
+                        <br>khalilkode@gmail.com</br>
+                    </div>
+                 </div>
+                 <div class="col-lg-8">
+                    <textarea class="textarea" name="input-text" id="input-text" placeholder="WRITE YOUR MESSAGE"></textarea>
+                    <button class="btn btn--form">SEND MESSAGE</button>
+                </div>
+    
+                 
+            </div>
+    
+            
+            
+            <!-- MODAL -->
+            
+            				
+                </div>
+            </section>
+        </div>
+    
+        <div class="modal" >
+                    
+            <div class="hair">
+    
+                <div class="work__main work__main-modal">
+                    <img src="/assets/img/work1-1.jpg" alt="" class="work__link work__link-modal">
+                        <div class="works__inner-modal" id="modal__test">
+                            <div class="works__tittle-modal">
+                                HAIR DRESSER
+                            </div>
+                            <div class="works__subtitle-modal">
+                                Branding
+                            </div>
+                            <div class="works__btn-bcg-modal">
+                            </div>
+                        </div> <!-- .work__inner -->
+                </div> <!-- ./work__main -->
+    
+                <button class="modal__close" type="button" data-close>
+                    <img src="/assets/img/close.png" alt="Close">
+                </button>
+            </div> <!-- ./hair -->
+    
+    </div> <!-- ./modal -->
+    
+    <div id="page-preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <div class="button__up">
+        <svg class="social__icon social__icon-button">
+            <use xlink:href="#arrow"></use>
+        </svg>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+    
+            <div class="footer__inner">
+                <div class="row__social">
+                    <a href="#">
+                    <svg class="social__icon  social__icon--twitter">
+                            <use xlink:href="#twitter"></use>
+                    </svg> 
+                </a>
+                    <svg class="social__icon  social__icon--twitter">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    <svg class="social__icon  social__icon--twitter">
+                            <use xlink:href="#twitter"></use>
+                    </svg> 
+                    <svg class="social__icon  social__icon--twitter">
+                            <use xlink:href="#twitter"></use>
+                    </svg> 
+                </div>
+        
+                <div class="footer__line"></div>
+                <div class="footer__title">© 2015 Startup, Designed by ShapedTheme</div>
+              </div>
+        </div>
+    </div>
+<script src="/assets/js/app.min.js"></script>
+<script src="/assets/js/new.js"></script>
+<script src="/assets/js/slider.js"></script>
+</body>
+</html>

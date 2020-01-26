@@ -1,0 +1,41 @@
+.homepage{
+    background-image: url("/assets/img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+}
+.homepage__intro{
+    text-align: center;
+    padding-top: 20%;
+    color: $white;
+
+    &.hide {
+        display: none;
+    }
+}
+.homepage__title{
+    font-size: 3.2rem;
+    @media (#{$xl}) {
+        font-size: 2.5rem;
+    }
+    @media (#{$lg}) {
+        font-size: 1.8rem;
+    }
+    @media (max-width: 920px) {
+        font-size: 1.5rem;
+    }
+    @media (#{$md}) {
+        font-size: 1.2rem;
+    }
+}
+.homepage__subtitle{
+    padding-bottom: 30px;
+    @media (#{$xl}) {
+        font-size: 1rem;
+    }
+    @media (max-width: 920px) {
+        font-size: .5rem;
+    }
+}
